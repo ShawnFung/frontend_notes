@@ -14,6 +14,27 @@ var b = 0.3;
 numbersCloseEnoughToEqual( a, b );
 ```
 
+NaN 是 JS 中唯一一个不等于自身的值：
+```
+NaN == NaN;  // false
+NaN === NaN;  // false
+// 可以利用 NaN 的这个特点，判断一个值是不是 NaN
+Number.isNaN = function(n){
+    return n !== n
+}
+```
+
+判断一个值是否是NaN
+```
+Object.is(val, NaN);  // (ES6)
+window.isNaN();  // 检查参数是否不是NaN，也不是数字。
+Number.isNaN();  // 检查参数是否不是NaN。（ES6）
+window.isNaN( NaN );  // true
+Number.isNaN( NaN );  // true
+window.isNaN( 'foo' );  // true
+Numberss.isNaN( 'foo' );  // false
+```
+
 | 方法、属性 | 描述 | 参数 | 返回值 |
 | ---- | ---- | --- | ---- |
 | toFixed(digits) | 设置小数点位数 | 小数点个数 | 字符串
