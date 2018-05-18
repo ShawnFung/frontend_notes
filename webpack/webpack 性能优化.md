@@ -27,3 +27,9 @@ module.exports = {
 开发环境查看：webpack -p --progress 或启动正常devServer服务即可启动查看器!
 
 ### 2. webpack官网提供的工具
+
+
+### 备忘录
+- [使用LsLoader优化webpack2应用加载性能，实现按chunks加载web应用](https://zhuanlan.zhihu.com/p/25012345)
+- externals + CDN
+- [使用可视化图表对 Webpack 2 的编译与打包进行统计分析](https://www.cnblogs.com/libin-1/p/7027164.html)
