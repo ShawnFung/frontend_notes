@@ -1,5 +1,6 @@
 ## Webpack 性能优化
 
+- [Webpack打包后体积过大的优化思路](https://blog.csdn.net/chencl1986/article/details/73835739)
 - [查看 webpack 打包后所有的依赖关系（webpack 可视化工具）](https://blog.csdn.net/qq_16559905/article/details/78551719)  
 - [webpack优化的工具](https://survivejs.com/webpack/optimizing/build-analysis/)
 - [webpack-libs-optimizations](https://github.com/GoogleChromeLabs/webpack-libs-optimizations#core-js)

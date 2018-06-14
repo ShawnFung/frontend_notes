@@ -3,6 +3,9 @@
 
 [Webpack实战-构建离线应用](https://segmentfault.com/a/1190000012556968)
 
+## Questions？
+- Webpack 打包后，自动生成一个版本号？
+
 
 ## 性能优化
 参见 webpack 性能优化
