@@ -1,7 +1,8 @@
 # webpack 综述
 
-
-[Webpack实战-构建离线应用](https://segmentfault.com/a/1190000012556968)
+## 参考文档
+- [Webpack实战-构建离线应用](https://segmentfault.com/a/1190000012556968)
+- [webpack 应用编译优化之路](https://juejin.im/post/59dc57f2f265da431d3ba2ef)
 
 ## Questions？
 - Webpack 打包后，自动生成一个版本号？
