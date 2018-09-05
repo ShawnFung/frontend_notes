@@ -6,7 +6,7 @@
 - [webpack-libs-optimizations](https://github.com/GoogleChromeLabs/webpack-libs-optimizations#core-js)
 
 ### 1. webpack-bundle-analyzer
-![webpack-bundle-analyzer](../images/webpack-bundle-analyzer.png)
+![webpack-bundle-analyzer](../../images/webpack-bundle-analyzer.png)
 
 使用和安装  
 ```
