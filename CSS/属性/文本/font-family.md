@@ -1,4 +1,9 @@
-##  font-family 
+#  font-family 
+
+## 参考文档
+- [CSS 中的字体兼容写法：用CSS为英文和中文字体分别设置不同的字体](https://www.cnblogs.com/goloving/p/9721328.html)
+- [如何优雅的选择字体(font-family)](https://segmentfault.com/a/1190000006110417)
+- [CSS font-family中文字体英文名称展示](https://www.zhangxinxu.com/study/201703/font-family-chinese-english.html)
 
 ### 各平台的默认字体情况
 
@@ -14,6 +19,3 @@
 ```
 font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 ```
-
-### 参考文档
-1. [如何优雅的选择字体(font-family)](https://segmentfault.com/a/1190000006110417)
