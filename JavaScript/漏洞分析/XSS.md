@@ -72,4 +72,48 @@ var escapeForJs = function(str) {
   str = str.replace(/"/g, '\\"');   // 转义双引号
   return str;
 }
+// 或者将 str 转换成 json
+var str = JSON.stringify(str)
 ```
+- 富文本  
+使用黑名单过滤：将指定标签或属性进行过滤。  
+缺点：HTML的标签和属性很多，很容易遗漏。
+```js
+var xssFilter = function(html) {
+  if(!html) return '';
+  html = html.replace(/<\s*\/?script\s*/g, '');   // 替换 script
+  html = html.replace(/javascript:[^'"]*/g, '');  // <a href=\"javascript:alert(1)\"></a>
+  html = html.replace(/onerror\s*=\s*['"]?[^'"]*/g, '');  // <img src="abc" onerror="alert(1)" />
+  // 等等等 还有很多需要过滤的标签
+  return html;
+}
+```
+使用白名单过滤：按白名单保留部分标签和属性。  
+第三方工具：[js-xss](https://github.com/leizongmin/js-xss/blob/master/README.zh.md)  
+也可以使用 [cheerio](https://github.com/cheeriojs/cheerio) 做 html 解析，然后自己做白名单过滤。
+```js
+var xssFilter = function(html){
+  var cheerio = require('cheerio');
+  var $ = cheerio.load(html);
+  var whiteList = {
+    'img': ['src'],
+    'font': ['color', 'size'],
+    'a': ['href']
+  }
+  $('*').each(function(index, elem) {
+    // 过滤标签
+    if(!whiteList[elem.name]){
+      $(elem).remove()
+      return;
+    }
+    for(var attr in elem.attribs){
+      // 过滤属性
+      if(whiteList[elem.name].indexOf(attr) === -1){
+        $(elem).attr(attr, null);
+      }
+    }
+  })
+  return $.html();
+}
+```
+
