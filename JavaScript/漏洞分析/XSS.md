@@ -117,3 +117,8 @@ var xssFilter = function(html){
 }
 ```
 
+## CSP Content Security Policy 内容安全策略
+用于指定哪些内容是可以执行的。
+- [内容安全策略( CSP )](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/CSP)
+- [巧妙地绕过CSP：欺骗CSP执行任意代码](https://www.anquanke.com/post/id/151496)
+
