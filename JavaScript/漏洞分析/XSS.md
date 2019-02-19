@@ -45,3 +45,31 @@ https://www.zcool.com.cn/search/content?&word=<script>alert(1)</script>
 X-XSS-Protection：
     - 0 关闭
     - 1 打开，默认值
+- 针对 HTML 内容，可以通过将 < 和 > 进行转译
+```js
+var escapeHtml = function(str) {
+  if(!str) return '';
+  str = str.replace(/</g, '&lt;');  // 转译 <
+  str = str.replace(/>/g, '&gt;');  // 转译 >
+  return str;
+}
+```
+- 针对 HTML 属性，可以将双引号、单引号和空格进行转译
+```js
+var escapeHtmlProperty = function(str) {
+  if(!str) return '';
+  str = str.replace(/"/g, '&quto;');  // 转译双引号，针对这种情况： <img src="#{image}" />
+  str = str.replace(/'/g, '&#39;');   // 转译单引号，针对这种情况：<img src='#{image}' />
+  str = str.replace(/ /g, '&#32;');   // 转译空格，针对这种情况：<img src=#{image} />
+  return str;
+}
+```
+- 针对 js 代码，转义"\"或者转换成json
+```js
+var escapeForJs = function(str) {
+  if(!str) return;
+  str = str.replace(/\\/g, '\\\\');   // 转义 \
+  str = str.replace(/"/g, '\\"');   // 转义双引号
+  return str;
+}
+```
