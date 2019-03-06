@@ -1,0 +1,83 @@
+<!DOC HTML>
+<html>
+	<head>
+		<title>TEST</title>
+		<style>
+			.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
+			.clearfix{*+height:1%;}
+			body{
+				margin: 0;
+			}
+			ul{
+				margin: 0;
+				padding: 0;
+			}
+			.nav{
+				position: absolute;
+				z-index: 2;
+				width: 100%;
+				height: 40px;
+				line-height: 40px;
+				background: #fff;
+			}
+			.nav-item{
+				background: #ccc;
+				float: left;
+			}
+			.sub-nav{
+				position: absolute;
+				z-index: 1;
+				top: 40px;
+				left: 0;
+				right: 0;
+				border: 1px solid #ccc;
+				visibility: hidden;
+				transform: translateY(-100%);
+				transition: .5s;
+			}
+			.sub-nav.hover{
+				visibility: visible;
+				transform: translateY(0);
+			}
+
+		</style>
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="nav">
+			<ul class="clearfix">
+				<li class="nav-item">
+					test1
+				</li>
+			</ul>
+		</div>
+		<div class="sub-nav">
+			<ul>
+				<li>sub1</li>
+				<li>sub2</li>
+			</ul>
+		</div>
+	</body>
+	<script>
+		var isIn = false;
+		$('.nav-item').on('mouseenter', function(){
+			$('.sub-nav').addClass('hover')
+		});
+		$('.nav-item').on('mouseleave', function(event){
+			let clientY = event.clientY;
+			let itemY = $('.nav-item')[0].getBoundingClientRect().bottom;
+			if(clientY < itemY){
+				console.log(event)
+				$('.sub-nav').removeClass('hover')
+			}
+		});
+		$('.sub-nav').on('mouseenter', function(event){
+			console.log('mouseenter')
+			$('.sub-nav').addClass('hover')
+		});
+		$('.sub-nav').on('mouseleave', function(){
+			console.log('mouseleave')
+			$('.sub-nav').removeClass('hover')
+		});
+	</script>
+</html>
