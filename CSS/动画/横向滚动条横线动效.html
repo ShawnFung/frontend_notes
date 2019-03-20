@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>TEST</title>		
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+		<style>
+			body{
+				padding: 0;
+				margin: 0;
+			}
+			ul{
+				position: fixed;
+				top: 0;
+				width: 100%;
+				list-style: none;
+				background: #e5e5e5;
+				padding-left: 10px;
+				margin: 0;
+			}
+			.active-line{
+				content: "";
+				display: inline-block;
+				position: absolute;
+				left: 0px;
+				bottom: 0;
+				height: 2px;
+				background: red;
+				transition: .5s;
+			}
+			li{
+				display: inline-block;
+				margin-right: 20px;
+				padding: 5px;
+				box-sizing: border-box;
+			}
+			.content{
+				height: 800px;
+				line-height: 800px;
+				font-size: 30px;
+				text-align: center;
+			}
+			.content:nth-of-type(2n){
+				background: #e5e5e5;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li class="item">Item 1</li>
+			<li class="item">Item 2</li>
+			<li class="item">Item 3</li>
+			<li class="item">Item 4</li>
+			<li class="item">Item 5</li>
+			<li class="item">Item 6</li>
+			<div class="active-line"></div>
+		</ul>
+		<div class="content">1</div>
+		<div class="content">2</div>
+		<div class="content">3</div>
+		<div class="content">4</div>
+		<div class="content">5</div>
+		<div class="content">6</div>
+		<script>
+			$(function(){
+				var $item = $('.item');
+				var $content = $('.content');
+				var $line = $('.active-line');
+				window.addEventListener('scroll', function(){
+					var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
+					for(var i = 0, length = $content.length; i < length; i++){
+						var $temp = $content.eq(i);
+						var top = $temp.offset().top;
+						var height = $temp.height()
+						if(scrollTop >= top && scrollTop < top + height){
+							var $selectedItem = $item.eq(i);
+							$line.css({
+								left: $selectedItem.offset().left,
+								width: $selectedItem.outerWidth()
+							});
+							return;
+						}
+					}
+					
+				});
+				$('body').on('click', '.item', function(){
+					var $item = $(this);
+					var index = $item.index();
+					var scrollTop = $content.eq(index).offset().top;
+					/**
+					$line.css({
+						left: $item.offset().left,
+						width: $item.outerWidth()
+					});
+					**/
+					$('html,body').animate({
+						scrollTop: scrollTop
+					}, 500)
+				})
+			})
+		</script>
+	</body>
+</html>
