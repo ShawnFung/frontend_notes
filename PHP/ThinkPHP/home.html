@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>login</title>
+		<meta charset='UTF-8'> 
+		<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="./static/wangEditor.css">
+		<script src="./static/wangEditor.js"></script>
+	</head>
+	<body>
+		<h1>你已经来到无人区了</h1>
+		<button id="logout">注销</button>
+		<button id="getUserInfo">获取用户信息</button>
+
+		<h1>文件上传</h1>
+		<div id="editor"></div>
+		<button>上传</button>
+		<script type="text/javascript">
+
+			function initEditor() {
+		      let editor = new window.wangEditor('#editor');
+		      editor.customConfig.uploadFileName = 'image'
+		      // 先把图片上传到工具服务，再添加到富文本中
+		      editor.customConfig.uploadImgServer = './upload';
+		      // 超时时间改成 20 秒。
+		      editor.customConfig.uploadImgTimeout = 20 * 1000;
+		      editor.customConfig.uploadImgHooks = {
+		        customInsert: (insertImg, result, editor) => {
+		          // this.getByUnikey(result.data, insertImg)
+		          let src = result.data;
+		          insertImg(src)
+		        }
+		      }
+		      editor.create();
+		    }
+
+			$(function(){
+
+				initEditor();
+
+				$('#logout').on('click', function(){
+					$.ajax({
+						url: './logout',
+						success: function(data){
+							if(data == 'success'){
+								location.href = './login.html'
+							}
+						}
+					})
+				})
+
+				$('#getUserInfo').on('click', function(){
+					$.ajax({
+						url: './getUserInfo',
+						success: function(data){
+							alert(data)
+						}
+					})
+				})
+			})
+		</script>
+	</body>
+</html>
