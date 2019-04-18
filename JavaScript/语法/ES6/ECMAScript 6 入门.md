@@ -1,8 +1,12 @@
-## ES6 语法
+# ECMAScript 6 入门
 
-### 块作用域声明
+## 参考文档
+- [理解spread运算符与rest参数](https://www.cnblogs.com/tugenhua0707/p/7476625.html)
+- [ECMAScript 6 入门](http://es6.ruanyifeng.com/#docs/proxy)
 
-#### let 声明
+## 块作用域声明
+
+### let 声明
 | 对比项 | let | var |
 | ------ | --- | --- |
 | 1. 作用域 | 块作用域 | 函数作用域 |
@@ -48,7 +52,7 @@ if (x) {
 }
 ```
 
-#### const 声明
+### const 声明
 用于创建常量。  
 常量不是对这个值本身的限制，而是对赋值的那个变量的限制。
 ```
@@ -63,8 +67,6 @@ if (x) {
 
 
 
-### Questions
+## Questions
 1. let 与 var 的区别？
 
-### 参考文档
-- [理解spread运算符与rest参数](https://www.cnblogs.com/tugenhua0707/p/7476625.html)
