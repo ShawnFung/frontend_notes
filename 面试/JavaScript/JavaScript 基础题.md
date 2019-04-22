@@ -18,3 +18,23 @@ xx.call(obj, ...params)
 ```
 根据MDN上对Array.sort()的解释，默认的排序方法会将数组元素转换为字符串，然后比较字符串中字符的UTF-16编码顺序来进行排序。所以'102' 会排在 '15' 前面。
 
+## ['1', '2', '3'].map(parseInt) what & why ?
+```
+结果是：[1, NaN, NaN]
+```
+分析：
+- map(function(value, index){ ... });  map的回调函数会传入 2 个参数，分别是数组某一项的值和索引
+- parseInt(string, radix);  parseInt可传入 2 个参数，分别是 string 代表要被解析的值，radix 表示上述字符串的基数（进制），默认为 10 进制。  
+```js
+['1', '2', '3'].map(parseInt);
+// 相当于
+parseInt('1', 0);   // 1
+parseInt('2', 1);   // NaN 基数为2（1进制）
+parseInt('3', 2);   // NaN 基数为2（2进制），'3'在2进制中是一个非法的值，2进制中只能存在0和1，所以无法解析，返回NaN
+```
+请问以下代码返回的结果是什么？
+```js
+['10','10','10','10','10'].map(parseInt);
+```
+
+
