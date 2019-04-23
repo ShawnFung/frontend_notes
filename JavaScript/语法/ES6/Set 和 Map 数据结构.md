@@ -63,9 +63,18 @@ map.get(k2) // 222
 
 ## WeakMap
 WeakMap结构与Map结构类似，也是用于生成键值对的集合。WeakMap与Map的区别有两点。
-- WeakMap只接受对象作为键名（null除外），不接受其他类型的值作为键名。
-- WeakMap的键名所指向的对象，不计入垃圾回收机制
+- WeakMap 只接受对象作为键名，不接受其他类型的值作为键名。
+- WeakMap 的键名所引用的对象是弱引用，一个对象若只被弱引用所引用，则被认为是不可访问（或弱可访问）的，并因此可能在任何时刻被回收。所以 WeakMap 可以帮你省掉手动删除对象关联数据的步骤，当你不能或者不想控制关联数据的生命周期时就可以考虑使用 WeakMap。
+
+### 应用
+- 在 DOM 对象上保存相关数据
+```js
+let wm = new WeakMap();
+var element = document.querySelector(".element");
+wm.set(element, "data");
 ```
-一个典型应用场景是，在网页的 DOM 元素上添加数据，就可以使用WeakMap结构。当该 DOM 元素被清除，其所对应的WeakMap记录就会自动被移除。
-```
+- 数据缓存
+
+## 参考文档
+- [ES6 系列之 WeakMap](https://github.com/mqyqingfeng/Blog/issues/92)
 
