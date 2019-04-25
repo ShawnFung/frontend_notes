@@ -15,6 +15,7 @@
   - lastIndexOf()
   - reduce()
   - reduceRight()
+  - Array.isArray() 判断一个对象是否为数组
 - Function增加属性方法
   - bind()
 - Date.now()
