@@ -1,7 +1,9 @@
 # JS运行机制
-
-## 参考文档
-- [从浏览器多进程到JS单线程，JS运行机制最全面的一次梳理](https://juejin.im/post/5a6547d0f265da3e283a1df7?utm_medium=fe&utm_source=weixinqun)
+- 理解JS的单线程的概念
+- 理解任务队列
+- 理解Event Loop
+- 理解哪些语句会放入异步任务队列
+- 理解语句放入异步任务队列的时机
 
 ## 渲染进程
 浏览器的渲染进程是多线程的，那么接下来看看它都包含了哪些线程（列举一些主要常驻线程）：
@@ -32,28 +34,6 @@
 - 在XMLHttpRequest在连接后是通过浏览器新开一个线程请求
 - 将检测到状态变更时，如果设置有回调函数，异步线程就产生状态变更事件，将这个回调再放入事件队列中。再由JavaScript引擎执行。
 
-## 浏览器渲染流程
-![浏览器渲染流程](../images/浏览器渲染流程.png)
-浏览器器内核拿到内容后，渲染大概可以划分成以下几个步骤：
-1. 解析html建立dom树
-2. 解析css构建render树（将CSS代码解析成树形的数据结构，然后结合DOM合并成render树）
-3. 布局render树（Layout/reflow），负责各元素尺寸、位置的计算
-4. 绘制render树（paint），绘制页面像素信息
-5. 浏览器会将各层的信息发送给GPU，GPU会将各层合成（composite），显示在屏幕上。  
-
-所有详细步骤都已经略去，渲染完毕后就是load事件了，之后就是自己的JS逻辑处理了。
-
-Q：load事件与DOMContentLoaded事件的先后？
-- 当 DOMContentLoaded 事件触发时，仅当DOM加载完成，不包括样式表，图片。 (譬如如果有async加载的脚本就不一定完成)
-- 当 onload 事件触发时，页面上所有的DOM，样式表，脚本，图片都已经加载完成了。 （渲染完毕了）  
-
-所以，顺序是：DOMContentLoaded -> load
-
-Q：css加载是否会阻塞dom树渲染？
-css是由单独的下载线程异步下载的。所以：
-- css加载不会阻塞DOM树解析（异步加载时DOM照常构建）
-- 但会阻塞render树渲染（渲染时需等css加载完毕，因为render树需要css信息）
-
 ## Event Loop
 - JS分为同步任务和异步任务
 - 同步任务都在主线程上执行，形成一个执行栈
@@ -81,4 +61,8 @@ setTimeout(function(){
 JS中分为两种任务类型：macrotask和microtask，在ECMAScript中，microtask称为jobs，macrotask可称为task。
 macrotask：主代码块，setTimeout，setInterval等（可以看到，事件队列中的每一个事件都是一个macrotask）  
 microtask：Promise，process.nextTick等
+
+## 参考文档
+- [从浏览器多进程到JS单线程，JS运行机制最全面的一次梳理](https://juejin.im/post/5a6547d0f265da3e283a1df7?utm_medium=fe&utm_source=weixinqun)
+
 
