@@ -3,8 +3,10 @@
 - @babel/core，Babel编译器的核心，如果要使用babel-loader进行es6的转码你首先必须得安装@babel/core
 - babel-loader，让Webpack能够使用Babel，编译ES6
 - @babel/preset-env，编译插件，指导Babel如何去编译ES6语法
-- @babel/polyfill，Babel只负责语法转换。针对浏览器不支持的对象、方法，需要引入 @babel/polyfill 来模拟实现。
-- @babel/plugin-transform-runtime
+
+Babel只负责语法转换。针对浏览器不支持的对象、方法，需要使用 polyfill。
+- 方案一，使用 @babel/polyfill，会污染全局环境，可以在业务代码中使用。
+- 方案二，使用 @babel/plugin-transform-runtime，不会污染全局环境，可以在第三方类库中使用。
 
 ## Preset
 ### Official Presets(正式的Presets)
@@ -22,6 +24,8 @@
 - Stage 4 - Finished: 将在明年发布
 
 ## @babel/polyfill
+缺点： @babel/polyfill 是通过向全局对象和内置对象的prototype上添加方法实现的，会造成全局变量污染。
+
 针对浏览器不支持的对象、方法，需要引入 @babel/polyfill 来模拟实现。
 - 全局对象：Promise、WeakMap 等。
 - 全局静态函数：Array.from、Object.assign 等。
@@ -67,6 +71,32 @@ module.exports = {
 ```
 - useBuiltIns: 'usage'，Babel 会根据实际代码中使用的ES6/ES7代码，以及与你指定的targets，按需引入对应的 polyfill，而无需在代码中直接引入 import '@babel/polyfill'，避免输出的包过大，同时又可以放心使用各种新语法特性。
 - useBuiltIns: 'entry' 的话，需要在你应用的入口文件顶部通过 require 或者 import 引入 @babel/polyfill。
+
+## [@babel/plugin-transform-runtime](https://babeljs.io/docs/en/babel-plugin-transform-runtime)
+transform-runtime，它在编译过程中只是将需要polyfill的代码引入了一个指向 core-js 中对应模块的链接(alias)，不会产生全局污染。
+
+- 安装
+```
+npm install --save-dev @babel/plugin-transform-runtime
+npm install --save @babel/runtime
+```
+- 使用
+```js
+// babel.config.js
+module.exports = {
+  "plugins": [
+    [
+      "@babel/plugin-transform-runtime",
+      {
+        "corejs": 2,  // 需要安装 npm install --save @babel/runtime-corejs2
+        "helpers": true,
+        "regenerator": true,
+        "useESModules": false
+      }
+    ]
+  ]
+}
+```
 
 ## 常见问题
 1. vuejs中使用（...）对象扩展运算符报错？  
