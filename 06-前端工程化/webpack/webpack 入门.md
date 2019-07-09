@@ -3,7 +3,7 @@ webpack 是模块打包工具。
 
 ## webpack 的安装
 - 全局安装。缺点：所有项目只能使用同一个版本的 webpack。
-- 在项目下安装。局部安装时，使用``` npx webpack xxx``` 可执行 webpack 命令。
+- 局部安装。局部安装时，使用``` npx webpack xxx``` 可执行 webpack 命令。
 
 ## webpack 支持哪些模块规范？
 - ES6 Modules
