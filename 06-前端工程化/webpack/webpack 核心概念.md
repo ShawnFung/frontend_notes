@@ -147,15 +147,8 @@ module.exports = merge(commConfig, developmentConfig)
 }
 ```
 
-## Code Splitting
-- 魔法注释 /* webpackChunkName="lodash" */
-```js
-import(/* webpackChunkName:"lodash" */ 'lodash').then()
-```
-- dynamicImport：babel-plugin-dynamic-import-webpack，不支持魔法注释
-- plugin-syntax-dynamic-import，支持魔法注释
 
-### SplitChunksPlugin 配置
+## SplitChunksPlugin 配置
 打包流程：
 1. 首先判断模块A，是否需要进行代码分割。
 2. 然后根据 cacheGroups 的配置，判断模块A应该放到哪个组里面。
@@ -188,6 +181,28 @@ import(/* webpackChunkName:"lodash" */ 'lodash').then()
 - cacheGroups 需要进行代码分割的模块，到底如何分割？这就需要根据 cacheGroups 的配置来判断。
     - priority 优先级，当某个模块满足多个 cacheGroup 时，会被打包到优先级更高的组里面。
     - reuseExistingChunk 如果一个模块已经被打包过了，则不进行重复打包。
+    
+## Lazy loading 懒加载
+- 魔法注释 /* webpackChunkName="lodash" */
+- import 懒加载
+```js
+import(/* webpackChunkName:"lodash" */ 'lodash').then(({ default: _ }) => {
+  console.log(_.join(['Dell', 'Lee']))
+})
+async function getComponent() {
+  const { default: _ } = await import(/* webpackChunkName:"lodash" */ 'lodash')
+  console.log(_.join(['Dell', 'Lee']))
+}
+```
+- dynamicImport：babel-plugin-dynamic-import-webpack，不支持魔法注释
+- plugin-syntax-dynamic-import，支持魔法注释
+
+## 打包分析
+- [analyse](https://github.com/webpack/analyse)
+```
+webpack --profile --json > stats.json
+```
+- webpack-bundle-analyzer
 
 ## 参考文档
 - [Asset Management](https://webpack.js.org/guides/asset-management/)
