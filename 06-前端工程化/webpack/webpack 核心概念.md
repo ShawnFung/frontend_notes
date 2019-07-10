@@ -147,6 +147,48 @@ module.exports = merge(commConfig, developmentConfig)
 }
 ```
 
+## Code Splitting
+- 魔法注释 /* webpackChunkName="lodash" */
+```js
+import(/* webpackChunkName:"lodash" */ 'lodash').then()
+```
+- dynamicImport：babel-plugin-dynamic-import-webpack，不支持魔法注释
+- plugin-syntax-dynamic-import，支持魔法注释
+
+### SplitChunksPlugin 配置
+打包流程：
+1. 首先判断模块A，是否需要进行代码分割。
+2. 然后根据 cacheGroups 的配置，判断模块A应该放到哪个组里面。
+3. 如果模块A没有匹配到任何一个 cacheGroup，那么模块A就不会被分割。
+```
+{
+  splitChunks: {
+    chunks: 'all',
+    cacheGroups: {
+      // 只有 node_modules 下的模块会匹配到 vendors 这个组。
+      vendors: {
+        test: /[\\/]node_modules[\\/]/,
+        priority: -10
+      },
+      // default 没有配置 test 属性，则所有的模块都会匹配到 default 这个组
+      default: {
+        minChunks: 2,
+        priority: -20,
+        reuseExistingChunk: true
+      }
+    }
+  }
+}
+```
+- chunks。async：只对异步代码进行分割，all：针对所有代码，initial：对同步代码进行分割。
+- minChunks 模块被引用的次数 >= minChunks时，才会进行代码分割
+- maxAsyncRequests 最大同时请求数
+- maxInitialRequests 在入口文件中引入的多个模块，最多能被分割成 maxInitialRequests 个
+- automaticNameDelimiter 组和文件名之间的连接符，如：vendors~main.js
+- cacheGroups 需要进行代码分割的模块，到底如何分割？这就需要根据 cacheGroups 的配置来判断。
+    - priority 优先级，当某个模块满足多个 cacheGroup 时，会被打包到优先级更高的组里面。
+    - reuseExistingChunk 如果一个模块已经被打包过了，则不进行重复打包。
+
 ## 参考文档
 - [Asset Management](https://webpack.js.org/guides/asset-management/)
 
