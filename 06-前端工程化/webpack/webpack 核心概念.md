@@ -125,6 +125,28 @@ module.exports = {
 };
 ```
 
+## Development和Production模式区分打包
+- webpack.common.js 公共配置文件
+- webpack.dev.js  开发模式配置文件
+- webpack.prod.js 生产模式配置文件
+```js
+// 以 webpack.dev.js 为例
+import merge from 'webpack-merge';  // 使用 webpack-merge 合并多个配置文件
+const commConfig = require("./config/webpack.common.js");
+const developmentConfig = {
+  // ...
+}
+module.exports = merge(commConfig, developmentConfig)
+```
+```
+{
+  "scripts": {
+    "dev": "webpack-dev-server --config ./config/webpack.dev.js",
+    "build": "webpack --config ./config/webpack.dev.js"
+  }
+}
+```
+
 ## 参考文档
 - [Asset Management](https://webpack.js.org/guides/asset-management/)
 
