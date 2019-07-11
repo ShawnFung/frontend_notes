@@ -15,6 +15,7 @@ tree-shaking的消除原理是依赖于ES6的模块特性。ES6模块依赖关�
 - vue.js vue.js在打包的时候是否使用了 tree-shaking？从 package.json 文件来看，里面添加了 "sideEffects" 属性
 - element-ui
 - vue 单文件
+- 如果使用了 tree shaking，需要设置 sideEffects: ['*.css'] 将 css 排除。
 
 ## 结论
 - 使用 ES2015 模块语法（即 import 和 export）。

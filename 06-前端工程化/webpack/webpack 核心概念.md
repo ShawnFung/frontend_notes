@@ -204,6 +204,84 @@ webpack --profile --json > stats.json
 ```
 - webpack-bundle-analyzer
 
+### 代码覆盖率 coverage
+- 通过谷歌控制台，可以看到js文件的代码覆盖率，点击具体文件，还可以看到哪些代码使用，哪些还没有使用。
+![代码覆盖率](../../images/代码覆盖率.png)
+- 通过代码覆盖率，可以看到哪些代码没有立即执行，对于这些代码，可以考虑提取出来，放到一个单独的文件中，使用异步加载。同时配合 prefetch ，在网络带宽有空闲时，提前加载。
+- Prefetch
+```js
+import(/* webpackPrefetch: true */ 'LoginModal');
+// <link rel="prefetch" href="login-modal-chunk.js">
+```
+
+## [CSS代码分割](https://webpack.js.org/plugins/mini-css-extract-plugin/)
+- MiniCssExtractPlugin，CSS代码分割插件，不支持 HMR，所以不能在开发环境使用。
+
+使用：
+```js
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+module.exports = {
+  plugins: [
+    // 1. 添加 plugin
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+      chunkFilename: '[id].css',
+    }),
+  ],
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+      },
+    ],
+  },
+};
+```
+
+- OptimizeCSSAssetsPlugin，CSS代码压缩合并插件
+```js
+const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+module.exports = {
+  optimization: {
+    minimizer: [new OptimizeCSSAssetsPlugin({})],
+  }
+};
+```
+
+- 将所有CSS提取到单个文件中
+```js
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+module.exports = {
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        styles: {
+          name: 'styles',
+          test: /\.css$/,
+          chunks: 'all',
+          enforce: true,
+        },
+      },
+    },
+  },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: '[name].css',
+    }),
+  ],
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+      },
+    ],
+  },
+};
+```
+
+
 ## 参考文档
 - [Asset Management](https://webpack.js.org/guides/asset-management/)
 
