@@ -10,13 +10,15 @@
     main: './src/index.js'
   },
   output: {
+    filename: '[name].js',  // 用于给 entry 中配置的文件命名，[name] 表示 entry 对象中的 key。
+    chunkFilename: '[name].chunk.js',   // 用于给非 entry 中配置的文件命名
+    path: path.resolve(__dirname, 'dist'),   // 打包后文件的输出目录，即文件在硬盘中的存储位置
     publicPath: 'https://cdn.example.com/assets/',  // 静态资源最终访问路径 = output.publicPath + 资源loader或插件等配置的路径
-    filename: '[name].js',
-    path: path.resolve(__dirname, 'dist')   // 打包后文件的输出目录，即文件在硬盘中的存储位置
   }
 }
 ```
 - output.filename 当 entry 中配置的入口文件 > 1 时，需要使用占位符
+- path 与 publicPath 的区别
 
 ## [Loader](https://webpack.js.org/loaders/)
 - webpack 默认只知道如何打包 js 文件，如果需要处理其他类型的文件，则需使用各种 loader。
@@ -39,6 +41,9 @@ import './index.css';   // 引入css文件
 - sass-loader 加载 sass/scss 文件，并将其解析成 CSS。
 - less-loader 加载 less 文件，并将其解析成 CSS。
 - postcss-loader 让webpack能够使用 PostCSS 去处理 CSS
+
+### 其他
+- imports-loader？
 
 ### 使用Babel处理ES6语法
 [安装](https://babeljs.io/setup#installation)
@@ -69,6 +74,12 @@ module: {
 - HtmlWebpackPlugin，会在打包结束后，自动生成一个 html 文件，并把打包生成的 js 自动引入到这个 html 文件中。
   - template，html模板文件的路径
 - CleanWebpackPlugin 用于删除/清理构建文件夹
+- webpack.ProvidePlugin 自动引用对应的模块
+```js
+new webpack.ProvidePlugin({
+  $: 'jquery',  // 如果页面使用了 $，webpack 会自动添加 import $ from 'jquery';
+});
+```
 
 ## devtool 与 sourceMap
 - source-map，会生成一个 .js.map 文件
@@ -281,6 +292,14 @@ module.exports = {
 };
 ```
 
+## externals
+如果在 externals 中配置了 jquery 模块，那么 jquery 就不会被打包到 bundle 中，而是在运行时(runtime)再去从外部获取这些扩展依赖。
+```js
+// import $ from 'jquery';
+externals: {
+  jquery: 'jQuery'
+}
+```
 
 ## 参考文档
 - [Asset Management](https://webpack.js.org/guides/asset-management/)
