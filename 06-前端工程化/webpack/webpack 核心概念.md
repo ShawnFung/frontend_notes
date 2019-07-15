@@ -1,7 +1,17 @@
 # webpack 核心概念
+- webpack只支持js/json类型的文件，对于其他webpack不支持的文件类型（如css/ts/image/less等），需要通过loader转换成有效的模块。
 
 ## Questions？
 - webpack-cli 有什么用？
+
+## webpack 的安装
+- 全局安装。缺点：所有项目只能使用同一个版本的 webpack。
+- 局部安装。局部安装时，使用``` npx webpack xxx``` 可执行 webpack 命令。
+
+## webpack 支持哪些模块规范？
+- ES6 Modules
+- CommonJS
+- AMD
 
 ## Entry和Output
 ```
@@ -19,67 +29,6 @@
 ```
 - output.filename 当 entry 中配置的入口文件 > 1 时，需要使用占位符
 - path 与 publicPath 的区别
-
-## [Loader](https://webpack.js.org/loaders/)
-- webpack 默认只知道如何打包 js 文件，如果需要处理其他类型的文件，则需使用各种 loader。
-- loader的执行的顺序是：从下到上，从右到左。
-```js
-import avatar from './avatar.png';  // 引入图片，avatar的值是图片的路径
-import './index.css';   // 引入css文件
-```
-
-### Files
-- file-loader，可以解析项目中的url引入（不仅限于css），根据我们的配置，将图片拷贝到相应的路径，并修改打包后文件引用路径，使之指向正确的文件。常用于图片、字体等文件的打包。
-- url-loader，提供了一个limit参数，小于limit字节的文件会被转为DataURl，大于limit的还是会使用file-loader进行copy。
-    - url-loader内置了file-loader，因此使用url-loader时，只需要安装url-loader即可，不需要安装file-loader。
-
-### Styling
-- style-loader 通过添加```<style>```标签，将 CSS 内容挂载到页面上，
-- css-loader
-  - importLoaders
-  - modules 是否启用 CSS Modules。
-- sass-loader 加载 sass/scss 文件，并将其解析成 CSS。
-- less-loader 加载 less 文件，并将其解析成 CSS。
-- postcss-loader 让webpack能够使用 PostCSS 去处理 CSS
-
-### 其他
-- imports-loader？
-
-### 使用Babel处理ES6语法
-[安装](https://babeljs.io/setup#installation)
-```
-npm install --save-dev babel-loader @babel/core @babel/preset-env
-```
-使用：
-```js
-module: {
-  rules: [
-    {
-      test: /\.js$/,
-      exclude: /node_modules/,
-      use: {
-        loader: 'babel-loader',
-        options: {
-          presets: [['@babel/preset-env', {
-            useBuiltIns: 'usage'  
-          }]]
-        }
-      }
-    }
-  ]
-}
-```
-
-## plugins
-- HtmlWebpackPlugin，会在打包结束后，自动生成一个 html 文件，并把打包生成的 js 自动引入到这个 html 文件中。
-  - template，html模板文件的路径
-- CleanWebpackPlugin 用于删除/清理构建文件夹
-- webpack.ProvidePlugin 自动引用对应的模块
-```js
-new webpack.ProvidePlugin({
-  $: 'jquery',  // 如果页面使用了 $，webpack 会自动添加 import $ from 'jquery';
-});
-```
 
 ## devtool 与 sourceMap
 - source-map，会生成一个 .js.map 文件
@@ -121,21 +70,6 @@ package.json
 }
 ```
 
-## Hot Module Replacement
-```js
-module.exports = {
-  devServer: {
-    hot: true,  
-    hotOnly: true
-  },
-  plugins: [
-    new webpack.HotModuleReplacementPlugin({
-      // Options...
-    })
-  ]
-};
-```
-
 ## Development和Production模式区分打包
 - webpack.common.js 公共配置文件
 - webpack.dev.js  开发模式配置文件
@@ -157,7 +91,6 @@ module.exports = merge(commConfig, developmentConfig)
   }
 }
 ```
-
 
 ## SplitChunksPlugin 配置
 打包流程：
@@ -225,73 +158,6 @@ import(/* webpackPrefetch: true */ 'LoginModal');
 // <link rel="prefetch" href="login-modal-chunk.js">
 ```
 
-## [CSS代码分割](https://webpack.js.org/plugins/mini-css-extract-plugin/)
-- MiniCssExtractPlugin，CSS代码分割插件，不支持 HMR，所以不能在开发环境使用。
-
-使用：
-```js
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-module.exports = {
-  plugins: [
-    // 1. 添加 plugin
-    new MiniCssExtractPlugin({
-      filename: '[name].css',
-      chunkFilename: '[id].css',
-    }),
-  ],
-  module: {
-    rules: [
-      {
-        test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader'],
-      },
-    ],
-  },
-};
-```
-
-- OptimizeCSSAssetsPlugin，CSS代码压缩合并插件
-```js
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
-module.exports = {
-  optimization: {
-    minimizer: [new OptimizeCSSAssetsPlugin({})],
-  }
-};
-```
-
-- 将所有CSS提取到单个文件中
-```js
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-module.exports = {
-  optimization: {
-    splitChunks: {
-      cacheGroups: {
-        styles: {
-          name: 'styles',
-          test: /\.css$/,
-          chunks: 'all',
-          enforce: true,
-        },
-      },
-    },
-  },
-  plugins: [
-    new MiniCssExtractPlugin({
-      filename: '[name].css',
-    }),
-  ],
-  module: {
-    rules: [
-      {
-        test: /\.css$/,
-        use: [MiniCssExtractPlugin.loader, 'css-loader'],
-      },
-    ],
-  },
-};
-```
-
 ## externals
 如果在 externals 中配置了 jquery 模块，那么 jquery 就不会被打包到 bundle 中，而是在运行时(runtime)再去从外部获取这些扩展依赖。
 ```js
@@ -301,6 +167,17 @@ externals: {
 }
 ```
 
+## resolve 解析
+- extensions 能够使用户在引入模块时不带扩展
+- mainFiles 解析目录时要使用的文件名
+- alias 别名
+
 ## 参考文档
 - [Asset Management](https://webpack.js.org/guides/asset-management/)
+- [Webpack文档](https://doc.webpack-china.org/)
+- [Awesome Webpack](https://github.com/webpack-contrib/awesome-webpack)
+- [Webpack 教程资源收集](https://segmentfault.com/a/1190000005995267)
+- [Vue+Webpack开发可复用的单页面富应用教程](https://zhuanlan.zhihu.com/p/21702056)
+- [Webpack实战-构建离线应用](https://segmentfault.com/a/1190000012556968)
+- [webpack 应用编译优化之路](https://juejin.im/post/59dc57f2f265da431d3ba2ef)
 
