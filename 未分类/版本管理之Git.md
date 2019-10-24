@@ -1,5 +1,8 @@
 # 版本管理之Git
 
+## 常见命令
+- git clone 地址，将远程仓库的代码拉到本地；
+
 ## git commit
 
 ## git pull
