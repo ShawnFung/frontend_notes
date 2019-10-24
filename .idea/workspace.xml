@@ -2,21 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7a028bf-1ae3-427d-a613-cbe0ce7fc660" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/01-JavaScript/常见需求/全屏API.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/02-浏览器/03-前端性能优化/02-HTTP缓存.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03-CSS/常见需求/文字两端对齐.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/03-CSS/负边距的应用.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05-Vue.js/ElementUI源码解析.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/05-Vue.js/vue-loader.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/未分类/UI资源整理.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-JavaScript/DOM/document.md" beforeDir="false" afterPath="$PROJECT_DIR$/01-JavaScript/DOM/DOM常用api.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-JavaScript/语法/数据类型/1.数字类型.md" beforeDir="false" afterPath="$PROJECT_DIR$/01-JavaScript/语法/数据类型/1.数字类型.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/01-JavaScript/02-JS运行机制/2-6.Event Loop 与异步更新策略.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-JavaScript/02-JS运行机制/2-1.JS运行机制.md" beforeDir="false" afterPath="$PROJECT_DIR$/01-JavaScript/02-JS运行机制/2-1.JS运行机制.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-JavaScript/语法/异步.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-浏览器/01-渲染机制/渲染机制.md" beforeDir="false" afterPath="$PROJECT_DIR$/02-浏览器/01-渲染机制/渲染机制.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/02-浏览器/03-前端性能优化/01-前端性能优化.md" beforeDir="false" afterPath="$PROJECT_DIR$/02-浏览器/03-前端性能优化/01-前端性能优化.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02-浏览器/03-前端性能优化/02-缓存.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/03-CSS/CSS预处理/SCSS/SCSS in ElementUI.md" beforeDir="false" afterPath="$PROJECT_DIR$/03-CSS/CSS预处理/SCSS/SCSS in ElementUI.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03-CSS/DEMO/绝对底部.md" beforeDir="false" afterPath="$PROJECT_DIR$/03-CSS/常见需求/绝对底部.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HTTP/缓存/localStorage.md" beforeDir="false" afterPath="$PROJECT_DIR$/02-浏览器/03-前端性能优化/07-本地存储.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/未分类/版本管理之Git.md" beforeDir="false" afterPath="$PROJECT_DIR$/未分类/版本管理之Git.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/02-浏览器/03-前端性能优化/05-回流和重绘.md" beforeDir="false" afterPath="$PROJECT_DIR$/02-浏览器/03-前端性能优化/05-回流和重绘.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/面试/JavaScript/节流.md" beforeDir="false" afterPath="$PROJECT_DIR$/02-浏览器/03-前端性能优化/09-节流.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/面试/JavaScript/防抖.md" beforeDir="false" afterPath="$PROJECT_DIR$/02-浏览器/03-前端性能优化/08-防抖.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,26 +23,10 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="07-本地存储.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/02-浏览器/03-前端性能优化/07-本地存储.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="353">
-                <caret line="22" selection-start-line="22" selection-end-line="22" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>this</find>
-      <find>类型</find>
-      <find>####</find>
       <find>性能</find>
       <find>缓存</find>
       <find>webpack</find>
@@ -76,6 +54,9 @@
       <find>性能优化</find>
       <find>优化</find>
       <find>Storage</find>
+      <find>渲染</find>
+      <find>Event Loop</find>
+      <find>防抖</find>
     </findStrings>
     <replaceStrings>
       <replace>babel-polyfill</replace>
@@ -94,10 +75,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/面试/CSS/CSS面试大纲.md" />
-        <option value="$PROJECT_DIR$/CSS/层叠上下文.md" />
-        <option value="$PROJECT_DIR$/面试/CSS/CSS大纲.md" />
-        <option value="$PROJECT_DIR$/JavaScript/1.原型/1-2.如何模拟一个 new.md" />
         <option value="$PROJECT_DIR$/JavaScript/1.原型/1-1.原型.md" />
         <option value="$PROJECT_DIR$/JavaScript/2.JS运行机制/2-3.执行上下文(EC).md" />
         <option value="$PROJECT_DIR$/面试/JavaScript/JavaScript大纲.md" />
@@ -110,7 +87,6 @@
         <option value="$PROJECT_DIR$/02-浏览器/03-前端性能优化/03-资源压缩与合并.md" />
         <option value="$PROJECT_DIR$/02-浏览器/03-前端性能优化/页面性能.md" />
         <option value="$PROJECT_DIR$/02-浏览器/03-前端性能优化/05-重绘和回流.md" />
-        <option value="$PROJECT_DIR$/02-浏览器/03-前端性能优化/05-回流和重绘.md" />
         <option value="$PROJECT_DIR$/02-浏览器/03-前端性能优化/07-Tree-shaking.md" />
         <option value="$PROJECT_DIR$/02-浏览器/03-前端性能优化/06-Webpack构建优化.md" />
         <option value="$PROJECT_DIR$/02-浏览器/03-前端性能优化/06-构建优化.md" />
@@ -142,9 +118,14 @@
         <option value="$PROJECT_DIR$/01-JavaScript/常见需求/全屏API.md" />
         <option value="$PROJECT_DIR$/01-JavaScript/语法/数据类型/1.数字类型.md" />
         <option value="$PROJECT_DIR$/未分类/版本管理之Git.md" />
-        <option value="$PROJECT_DIR$/02-浏览器/03-前端性能优化/01-前端性能优化.md" />
         <option value="$PROJECT_DIR$/02-浏览器/03-前端性能优化/02-缓存.md" />
         <option value="$PROJECT_DIR$/02-浏览器/03-前端性能优化/07-本地存储.md" />
+        <option value="$PROJECT_DIR$/02-浏览器/01-渲染机制/渲染机制.md" />
+        <option value="$PROJECT_DIR$/01-JavaScript/02-JS运行机制/2-1.JS运行机制.md" />
+        <option value="$PROJECT_DIR$/01-JavaScript/02-JS运行机制/异步.md" />
+        <option value="$PROJECT_DIR$/01-JavaScript/02-JS运行机制/2-6.Event Loop 与异步更新策略.md" />
+        <option value="$PROJECT_DIR$/02-浏览器/03-前端性能优化/05-回流和重绘.md" />
+        <option value="$PROJECT_DIR$/02-浏览器/03-前端性能优化/01-前端性能优化.md" />
       </list>
     </option>
   </component>
@@ -179,18 +160,13 @@
             <path>
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="02-浏览器" type="462c0819:PsiDirectoryNode" />
+              <item name="面试" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="blog" type="b2602c69:ProjectViewProjectNode" />
               <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="02-浏览器" type="462c0819:PsiDirectoryNode" />
-              <item name="03-前端性能优化" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="HTTP" type="462c0819:PsiDirectoryNode" />
+              <item name="面试" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaScript" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -206,7 +182,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/projects/vTradEx/wyxd/wyxd/frontend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../element" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
@@ -218,10 +194,10 @@
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\personal\blog\02-浏览器\03-前端性能优化" />
+      <recent name="D:\personal\blog\01-JavaScript\02-JS运行机制" />
       <recent name="D:\personal\blog" />
       <recent name="D:\personal\blog\03-CSS" />
       <recent name="D:\personal\blog\08-Node.js" />
-      <recent name="D:\personal\blog\06-前端工程化\webpack\plugins" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -527,7 +503,7 @@
       <workItem from="1567737381970" duration="2177000" />
       <workItem from="1568856280352" duration="1480000" />
       <workItem from="1570601051960" duration="1503000" />
-      <workItem from="1571896236855" duration="7171000" />
+      <workItem from="1571896236855" duration="13394000" />
     </task>
     <task id="LOCAL-00001" summary="Egg 第一次阅读官方文档">
       <created>1531387032856</created>
@@ -820,13 +796,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="499035000" />
+    <option name="totallyTimeSpent" value="505258000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.16918188" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19459888" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3293718" />
@@ -880,62 +855,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="资料整理" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/06-前端工程化/webpack/require 动态加载.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="230">
-            <caret line="6" column="70" lean-forward="true" selection-start-line="6" selection-start-column="70" selection-end-line="6" selection-end-column="70" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/06-前端工程化/webpack/plugins/Webpack常用插件.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="184">
-            <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/06-前端工程化/webpack/loaders/Webpack常用Loader.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="46">
-            <caret line="2" column="85" selection-start-line="2" selection-start-column="85" selection-end-line="2" selection-end-column="85" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/06-前端工程化/webpack/webpack 核心概念.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="3081">
-            <caret line="178" column="10" selection-start-line="178" selection-start-column="10" selection-end-line="178" selection-end-column="10" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/07-算法/2.动态规划.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/07-算法/3.冒泡排序.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-921" />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/07-算法/广度优先遍历.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1244,44 +1163,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/02-浏览器/03-前端性能优化/03-资源压缩与合并.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02-浏览器/03-前端性能优化/04-图片懒加载.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02-浏览器/03-前端性能优化/05-回流和重绘.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/02-浏览器/03-前端性能优化/06-构建优化.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
           <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02-浏览器/03-前端性能优化/01-前端性能优化.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="-392">
-            <caret line="12" column="8" lean-forward="true" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
-          </first_editor>
           <second_editor />
         </state>
       </provider>
@@ -1299,8 +1184,102 @@
     <entry file="file://$PROJECT_DIR$/02-浏览器/03-前端性能优化/07-本地存储.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="353">
-            <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <first_editor relative-caret-position="123">
+            <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02-浏览器/03-前端性能优化/03-资源压缩与合并.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02-浏览器/03-前端性能优化/04-图片懒加载.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="-552" />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-JavaScript/02-JS运行机制/2-2.Promise和setTimeout执行顺序.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="-230" />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-JavaScript/02-JS运行机制/2-1.JS运行机制.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="828">
+            <caret line="36" selection-start-line="36" selection-end-line="36" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-JavaScript/02-JS运行机制/异步.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="46">
+            <caret line="2" selection-start-line="2" selection-end-line="2" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-JavaScript/02-JS运行机制/2-6.Event Loop 与异步更新策略.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="1011">
+            <caret line="53" column="41" lean-forward="true" selection-start-line="53" selection-start-column="41" selection-end-line="53" selection-end-column="41" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02-浏览器/03-前端性能优化/08-防抖.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="276">
+            <caret line="64" column="30" lean-forward="true" selection-start-line="64" selection-start-column="30" selection-end-line="64" selection-end-column="30" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02-浏览器/03-前端性能优化/01-前端性能优化.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="-299">
+            <caret line="14" column="13" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="13" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02-浏览器/01-渲染机制/渲染机制.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="206">
+            <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/02-浏览器/03-前端性能优化/05-回流和重绘.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="161">
+            <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
           </first_editor>
           <second_editor />
         </state>
