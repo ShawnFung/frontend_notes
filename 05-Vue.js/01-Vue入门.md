@@ -1,5 +1,10 @@
 # Vue入门
 
+## TODO
+- 函数式组件
+- vue Observable 进行状态管理
+- [7个有用的Vue开发技巧](https://www.jianshu.com/p/c644085aa155)
+
 ## Vue 组件库
 WEB端
 - [Element UI](http://element-cn.eleme.io/#/zh-CN)

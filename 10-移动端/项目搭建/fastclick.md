@@ -1,5 +1,11 @@
 # fastclick
 
+## 为什么要使用fastclick
+在部分手机上，click事件存在300毫秒的延迟。
+
+## fastclick的原理
+fastclick的思路就是利用touch来模拟tap（触碰），如果认为是一次有效的tap，则在touchend时立即模拟一个click事件，分发到事件源（相当于主动触发一次click），同时阻止掉浏览器300ms后产生的click。
+
 ## 安装 fastclick
 在页面直接引入fastclick.js
 ```html
@@ -28,7 +34,7 @@ $(function() {
 类似Common JS的模块系统方式
 ```js
 var attachFastClick = require('fastclick');
-attachFastClick(document.body);
+attachFastClick.attach(document.body);
 ```
 
 ## 使用needsclick过滤特定的元素

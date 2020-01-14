@@ -2,15 +2,38 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7a028bf-1ae3-427d-a613-cbe0ce7fc660" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/01-JavaScript/02-JS运行机制/2-6.Event Loop 与异步更新策略.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/06-前端工程化/前端自动化测试/01-Jest.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-数据结构与算法/二分查找.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-数据结构与算法/广度优先遍历.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/07-数据结构与算法/数据结构.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-移动端/常见问题.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/10-移动端/项目搭建/移动端布局方案.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Nginx与前端.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-JavaScript/02-JS运行机制/2-1.JS运行机制.md" beforeDir="false" afterPath="$PROJECT_DIR$/01-JavaScript/02-JS运行机制/2-1.JS运行机制.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-JavaScript/语法/异步.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/02-浏览器/01-渲染机制/渲染机制.md" beforeDir="false" afterPath="$PROJECT_DIR$/02-浏览器/01-渲染机制/渲染机制.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02-浏览器/03-前端性能优化/01-前端性能优化.md" beforeDir="false" afterPath="$PROJECT_DIR$/02-浏览器/03-前端性能优化/01-前端性能优化.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02-浏览器/03-前端性能优化/05-回流和重绘.md" beforeDir="false" afterPath="$PROJECT_DIR$/02-浏览器/03-前端性能优化/05-回流和重绘.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/面试/JavaScript/节流.md" beforeDir="false" afterPath="$PROJECT_DIR$/02-浏览器/03-前端性能优化/09-节流.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/面试/JavaScript/防抖.md" beforeDir="false" afterPath="$PROJECT_DIR$/02-浏览器/03-前端性能优化/08-防抖.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-JavaScript/浅拷贝和深拷贝.md" beforeDir="false" afterPath="$PROJECT_DIR$/01-JavaScript/浅拷贝和深拷贝.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/01-JavaScript/语法/内置对象/Array.md" beforeDir="false" afterPath="$PROJECT_DIR$/01-JavaScript/语法/内置对象/Array.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05-Vue.js/01-Vue入门.md" beforeDir="false" afterPath="$PROJECT_DIR$/05-Vue.js/01-Vue入门.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05-Vue.js/4.Vue组件内容分发 slot.md" beforeDir="false" afterPath="$PROJECT_DIR$/05-Vue.js/插槽.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-算法/0.算法入门.md" beforeDir="false" afterPath="$PROJECT_DIR$/07-数据结构与算法/0.算法入门.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-算法/1.排序算法.md" beforeDir="false" afterPath="$PROJECT_DIR$/07-数据结构与算法/1.排序算法.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-算法/2.动态规划.md" beforeDir="false" afterPath="$PROJECT_DIR$/07-数据结构与算法/2.动态规划.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-算法/3.冒泡排序.md" beforeDir="false" afterPath="$PROJECT_DIR$/07-数据结构与算法/3.冒泡排序.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-算法/广度优先遍历.md" beforeDir="false" afterPath="$PROJECT_DIR$/05-Vue.js/函数式组件.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/07-算法/深度优先遍历.md" beforeDir="false" afterPath="$PROJECT_DIR$/07-数据结构与算法/深度优先遍历.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/移动端/0.目录.md" beforeDir="false" afterPath="$PROJECT_DIR$/10-移动端/0.目录.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/移动端/1.移动端资源整理.md" beforeDir="false" afterPath="$PROJECT_DIR$/10-移动端/1.移动端资源整理.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/移动端/3.H5与Native交互.md" beforeDir="false" afterPath="$PROJECT_DIR$/10-移动端/3.H5与Native交互.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/移动端/5.移动端开发总结.md" beforeDir="false" afterPath="$PROJECT_DIR$/10-移动端/5.移动端开发总结.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/移动端/6.移动端自适应.md" beforeDir="false" afterPath="$PROJECT_DIR$/10-移动端/6.移动端自适应.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/移动端/Hybrid/H5唤起App.md" beforeDir="false" afterPath="$PROJECT_DIR$/10-移动端/Hybrid/H5唤起App.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/移动端/Hybrid/Hybrid.md" beforeDir="false" afterPath="$PROJECT_DIR$/10-移动端/Hybrid/Hybrid.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/移动端/Hybrid/url scheme.md" beforeDir="false" afterPath="$PROJECT_DIR$/10-移动端/Hybrid/url scheme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/移动端/实战/1.nav_fixed.html" beforeDir="false" afterPath="$PROJECT_DIR$/10-移动端/实战/1.nav_fixed.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/移动端/移动端软键盘.md" beforeDir="false" afterPath="$PROJECT_DIR$/10-移动端/移动端软键盘.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/移动端/第三方库/fastclick.md" beforeDir="false" afterPath="$PROJECT_DIR$/10-移动端/项目搭建/fastclick.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/移动端/项目搭建/css/mixin.less" beforeDir="false" afterPath="$PROJECT_DIR$/10-移动端/项目搭建/css/mixin.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/移动端/项目搭建/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/10-移动端/项目搭建/css/reset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/移动端/项目搭建/移动端项目搭建.md" beforeDir="false" afterPath="$PROJECT_DIR$/10-移动端/项目搭建/移动端项目搭建.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,22 +46,47 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Set 和 Map 数据结构.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/01-JavaScript/语法/ES6/Set 和 Map 数据结构.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="23">
+                <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="浅拷贝和深拷贝.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/01-JavaScript/浅拷贝和深拷贝.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="344">
+                <caret line="63" column="3" selection-start-line="63" selection-start-column="3" selection-end-line="63" selection-end-column="3" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Array_API.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/01-JavaScript/语法/内置对象/Array_API.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="148">
+                <caret line="12" column="9" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="9" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>性能</find>
-      <find>缓存</find>
-      <find>webpack</find>
-      <find>webpack-bundle-analyzer</find>
-      <find>单例</find>
-      <find>providePlugin</find>
-      <find>模块化</find>
-      <find>HotModuleReplacementPlugin</find>
-      <find>Plugin</find>
-      <find>###</find>
-      <find>plugin</find>
-      <find>算法</find>
       <find>npm</find>
       <find>typescript</find>
       <find>strictNullChecks</find>
@@ -57,6 +105,18 @@
       <find>渲染</find>
       <find>Event Loop</find>
       <find>防抖</find>
+      <find>nginx</find>
+      <find>测试</find>
+      <find>fastclick</find>
+      <find>rem</find>
+      <find>app</find>
+      <find>数据结构</find>
+      <find>算法</find>
+      <find>vue</find>
+      <find>slot</find>
+      <find>拷贝</find>
+      <find>去重</find>
+      <find>forEach</find>
     </findStrings>
     <replaceStrings>
       <replace>babel-polyfill</replace>
@@ -67,6 +127,8 @@
       <dir>D:\personal\blog\Node.js\语法篇</dir>
       <dir>D:\personal\blog\05-Vue.js</dir>
       <dir>D:\personal\blog</dir>
+      <dir>D:\personal\frontend_notes</dir>
+      <dir>D:\personal\frontend_notes\01-JavaScript</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -75,18 +137,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/JavaScript/1.原型/1-1.原型.md" />
-        <option value="$PROJECT_DIR$/JavaScript/2.JS运行机制/2-3.执行上下文(EC).md" />
-        <option value="$PROJECT_DIR$/面试/JavaScript/JavaScript大纲.md" />
-        <option value="$PROJECT_DIR$/JavaScript/2.JS运行机制/2-5.函数执行改变this.md" />
-        <option value="$PROJECT_DIR$/JavaScript/浅拷贝和深拷贝.md" />
-        <option value="$PROJECT_DIR$/浏览器/浏览器大纲.md" />
-        <option value="$PROJECT_DIR$/前端知识大纲.md" />
-        <option value="$PROJECT_DIR$/02-浏览器/03-网页性能优化/a 导读.md" />
-        <option value="$PROJECT_DIR$/02-浏览器/03-网页性能优化/01-前端性能优化.md" />
-        <option value="$PROJECT_DIR$/02-浏览器/03-前端性能优化/03-资源压缩与合并.md" />
-        <option value="$PROJECT_DIR$/02-浏览器/03-前端性能优化/页面性能.md" />
-        <option value="$PROJECT_DIR$/02-浏览器/03-前端性能优化/05-重绘和回流.md" />
         <option value="$PROJECT_DIR$/02-浏览器/03-前端性能优化/07-Tree-shaking.md" />
         <option value="$PROJECT_DIR$/02-浏览器/03-前端性能优化/06-Webpack构建优化.md" />
         <option value="$PROJECT_DIR$/02-浏览器/03-前端性能优化/06-构建优化.md" />
@@ -103,7 +153,6 @@
         <option value="$PROJECT_DIR$/05-Vue.js/1.组件通信.md" />
         <option value="$PROJECT_DIR$/05-Vue.js/0.目录.md" />
         <option value="$PROJECT_DIR$/05-Vue.js/Vue实践与技巧.md" />
-        <option value="$PROJECT_DIR$/05-Vue.js/01-Vue入门.md" />
         <option value="$PROJECT_DIR$/08-Node.js/常用 npm 命令.md" />
         <option value="$PROJECT_DIR$/TypeScript/0.引言.md" />
         <option value="$PROJECT_DIR$/09-动画/CSS动画/纯CSS动画.md" />
@@ -126,6 +175,19 @@
         <option value="$PROJECT_DIR$/01-JavaScript/02-JS运行机制/2-6.Event Loop 与异步更新策略.md" />
         <option value="$PROJECT_DIR$/02-浏览器/03-前端性能优化/05-回流和重绘.md" />
         <option value="$PROJECT_DIR$/02-浏览器/03-前端性能优化/01-前端性能优化.md" />
+        <option value="$PROJECT_DIR$/Nginx与前端.md" />
+        <option value="$PROJECT_DIR$/10-移动端/项目搭建/fastclick.md" />
+        <option value="$PROJECT_DIR$/10-移动端/项目搭建/移动端项目搭建.md" />
+        <option value="$PROJECT_DIR$/10-移动端/项目搭建/移动端布局方案.md" />
+        <option value="$PROJECT_DIR$/10-移动端/常见问题.md" />
+        <option value="$PROJECT_DIR$/07-数据结构与算法/数据结构.md" />
+        <option value="$PROJECT_DIR$/07-数据结构与算法/滑动窗口算法.md" />
+        <option value="$PROJECT_DIR$/07-数据结构与算法/二分查找.md" />
+        <option value="$PROJECT_DIR$/05-Vue.js/01-Vue入门.md" />
+        <option value="$PROJECT_DIR$/05-Vue.js/插槽.md" />
+        <option value="$PROJECT_DIR$/05-Vue.js/函数式组件.md" />
+        <option value="$PROJECT_DIR$/01-JavaScript/语法/内置对象/Array.md" />
+        <option value="$PROJECT_DIR$/01-JavaScript/浅拷贝和深拷贝.md" />
       </list>
     </option>
   </component>
@@ -139,8 +201,7 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="603" />
-    <option name="y" value="15" />
+    <option name="x" value="582" />
     <option name="width" value="1329" />
     <option name="height" value="1035" />
   </component>
@@ -149,29 +210,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend_notes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend_notes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="面试" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="blog" type="b2602c69:ProjectViewProjectNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-              <item name="面试" type="462c0819:PsiDirectoryNode" />
-              <item name="JavaScript" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend_notes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="frontend_notes" type="462c0819:PsiDirectoryNode" />
+              <item name="01-JavaScript" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -182,22 +237,22 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../element" />
+    <property name="last_opened_file_path" value="D:/projects/vTradEx/东盛易畅OTWB" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\personal\frontend_notes\10-移动端\项目搭建" />
+      <recent name="D:\personal\frontend_notes\10-移动端\项目搭建\移动端布局" />
+      <recent name="D:\personal\blog\02-浏览器\03-前端性能优化" />
+      <recent name="D:\personal\blog\01-JavaScript\02-JS运行机制" />
+      <recent name="D:\personal\blog" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\personal\blog\images" />
       <recent name="D:\personal\blog\移动端\项目搭建\css" />
       <recent name="D:\personal\blog\PHP\ThinkPHP" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\personal\blog\02-浏览器\03-前端性能优化" />
-      <recent name="D:\personal\blog\01-JavaScript\02-JS运行机制" />
-      <recent name="D:\personal\blog" />
-      <recent name="D:\personal\blog\03-CSS" />
-      <recent name="D:\personal\blog\08-Node.js" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -504,6 +559,23 @@
       <workItem from="1568856280352" duration="1480000" />
       <workItem from="1570601051960" duration="1503000" />
       <workItem from="1571896236855" duration="13394000" />
+      <workItem from="1571985848487" duration="1892000" />
+      <workItem from="1572401633413" duration="336000" />
+      <workItem from="1572485182726" duration="878000" />
+      <workItem from="1574407495443" duration="3702000" />
+      <workItem from="1574747503676" duration="2905000" />
+      <workItem from="1574833429723" duration="2799000" />
+      <workItem from="1575258557861" duration="2377000" />
+      <workItem from="1575354366443" duration="2934000" />
+      <workItem from="1575444305226" duration="1423000" />
+      <workItem from="1575508759967" duration="1243000" />
+      <workItem from="1576133525032" duration="1207000" />
+      <workItem from="1576201520196" duration="3266000" />
+      <workItem from="1576460252869" duration="624000" />
+      <workItem from="1576545087527" duration="598000" />
+      <workItem from="1577428289519" duration="2191000" />
+      <workItem from="1577671262891" duration="5703000" />
+      <workItem from="1578969274252" duration="2686000" />
     </task>
     <task id="LOCAL-00001" summary="Egg 第一次阅读官方文档">
       <created>1531387032856</created>
@@ -796,26 +868,27 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="505258000" />
+    <option name="totallyTimeSpent" value="542022000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19459888" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.2025417" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3293718" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.43803057" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.35017422" />
+      <window_info anchor="bottom" id="Run" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3205575" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
@@ -855,140 +928,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="资料整理" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/07-算法/广度优先遍历.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/07-算法/深度优先遍历.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/07-算法/1.排序算法.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/07-算法/0.算法入门.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="138">
-            <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/05-Vue.js/3.Vue插件开发.md" />
-    <entry file="file://$PROJECT_DIR$/05-Vue.js/2.预渲染.md" />
-    <entry file="file://$PROJECT_DIR$/05-Vue.js/1.组件通信.md" />
-    <entry file="file://$PROJECT_DIR$/05-Vue.js/diff算法.md" />
-    <entry file="file://$PROJECT_DIR$/05-Vue.js/Vue实践与技巧.md" />
-    <entry file="file://$PROJECT_DIR$/05-Vue.js/4.Vue组件内容分发 slot.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="46">
-            <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/05-Vue.js/组件/1.toast.md" />
-    <entry file="file://$PROJECT_DIR$/05-Vue.js/vue-router/前端路由的两种模式.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-759" />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/05-Vue.js/01-Vue入门.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="313">
-            <caret line="78" column="1" lean-forward="true" selection-start-line="78" selection-start-column="1" selection-end-line="78" selection-end-column="1" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/工具篇.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="46">
-            <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/08-Node.js/常用 npm 命令.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="184">
-            <caret line="8" column="15" lean-forward="true" selection-start-line="8" selection-start-column="15" selection-end-line="8" selection-end-column="15" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TypeScript/1.类型断言.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-921">
-            <caret line="5" column="5" lean-forward="true" selection-start-line="5" selection-start-column="5" selection-end-line="5" selection-end-column="5" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TypeScript/2.声明文件.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TypeScript/3.第三方模块导入.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/TypeScript/0.引言.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="359">
-            <caret line="60" column="1" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/09-动画/动效落地.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="252">
-            <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/09-动画/CSS动画/纯CSS动画.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -1225,16 +1164,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/01-JavaScript/02-JS运行机制/异步.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="46">
-            <caret line="2" selection-start-line="2" selection-end-line="2" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/01-JavaScript/02-JS运行机制/异步.md" />
     <entry file="file://$PROJECT_DIR$/01-JavaScript/02-JS运行机制/2-6.Event Loop 与异步更新策略.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -1280,6 +1210,202 @@
         <state split_layout="FIRST">
           <first_editor relative-caret-position="161">
             <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Nginx与前端.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor>
+            <caret column="7" selection-start-column="7" selection-end-column="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06-前端工程化/前端自动化测试/01-Jest.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10-移动端/项目搭建/fastclick.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="299">
+            <caret line="36" column="22" selection-start-line="36" selection-start-column="22" selection-end-line="36" selection-end-column="22" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10-移动端/项目搭建/css/reset.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="60" column="1" lean-forward="true" selection-start-line="60" selection-start-column="1" selection-end-line="60" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10-移动端/6.移动端自适应.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="253">
+            <caret line="11" column="7" selection-start-line="11" selection-start-column="3" selection-end-line="11" selection-end-column="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10-移动端/项目搭建/移动端项目搭建.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="207">
+            <caret line="9" selection-start-line="9" selection-end-line="9" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10-移动端/常见问题.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="138">
+            <caret line="5" column="35" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="35" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/07-数据结构与算法/数据结构.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="92">
+            <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/07-数据结构与算法/0.算法入门.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="322">
+            <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/07-数据结构与算法/滑动窗口算法.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="267">
+            <caret line="27" column="21" lean-forward="true" selection-start-line="27" selection-start-column="21" selection-end-line="27" selection-end-column="21" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/07-数据结构与算法/二分查找.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="92">
+            <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10-移动端/0.目录.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/10-移动端/项目搭建/移动端布局方案.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="345">
+            <caret line="15" selection-start-line="15" selection-end-line="15" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05-Vue.js/插槽.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="437">
+            <caret line="44" column="3" lean-forward="true" selection-start-line="44" selection-start-column="3" selection-end-line="44" selection-end-column="3" />
+            <folding>
+              <element signature="e#163#182#0" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05-Vue.js/01-Vue入门.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="115">
+            <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05-Vue.js/函数式组件.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="23">
+            <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-JavaScript/语法/内置对象/Array_API.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="148">
+            <caret line="12" column="9" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="9" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-JavaScript/语法/内置对象/Array.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="276">
+            <caret line="12" column="44" lean-forward="true" selection-start-line="12" selection-start-column="44" selection-end-line="12" selection-end-column="44" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-JavaScript/语法/ES6/Set 和 Map 数据结构.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="23">
+            <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/01-JavaScript/浅拷贝和深拷贝.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="344">
+            <caret line="63" column="3" selection-start-line="63" selection-start-column="3" selection-end-line="63" selection-end-column="3" />
           </first_editor>
           <second_editor />
         </state>
