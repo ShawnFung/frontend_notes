@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7a028bf-1ae3-427d-a613-cbe0ce7fc660" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/03-CSS/CSS 阴影技巧与细节.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11-测试/Jest/Vue中的 BDD 与集成测试.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11-测试/Jest/Vue中的TDD与单元测试.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11-测试/Jest/测试异步代码.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11-测试/Jest/钩子函数.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01-JavaScript/JavaScript大纲.md" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -17,7 +19,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -38,7 +40,6 @@
       <find>Event Loop</find>
       <find>防抖</find>
       <find>nginx</find>
-      <find>测试</find>
       <find>fastclick</find>
       <find>rem</find>
       <find>app</find>
@@ -51,6 +52,7 @@
       <find>forEach</find>
       <find>类型</find>
       <find>box-shadow</find>
+      <find>测试</find>
     </findStrings>
     <replaceStrings>
       <replace>babel-polyfill</replace>
@@ -62,8 +64,8 @@
       <dir>D:\personal\blog\05-Vue.js</dir>
       <dir>D:\personal\blog</dir>
       <dir>D:\personal\frontend_notes\01-JavaScript</dir>
-      <dir>D:\personal\frontend_notes</dir>
       <dir>D:\personal\frontend_notes\03-CSS</dir>
+      <dir>D:\personal\frontend_notes</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -72,10 +74,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/02-浏览器/03-前端性能优化/06-Webpack构建优化.md" />
-        <option value="$PROJECT_DIR$/02-浏览器/03-前端性能优化/06-构建优化.md" />
-        <option value="$PROJECT_DIR$/06-前端工程化/webpack/01-Tree-shaking.md" />
-        <option value="$PROJECT_DIR$/06-前端工程化/模块化.md" />
         <option value="$PROJECT_DIR$/06-前端工程化/webpack/Webpack实战.md" />
         <option value="$PROJECT_DIR$/06-前端工程化/webpack/plugins/MiniCssExtractPlugin.md" />
         <option value="$PROJECT_DIR$/06-前端工程化/webpack/Webpack常用插件.md" />
@@ -123,6 +121,10 @@
         <option value="$PROJECT_DIR$/01-JavaScript/语法/内置对象/Array.md" />
         <option value="$PROJECT_DIR$/01-JavaScript/浅拷贝和深拷贝.md" />
         <option value="$PROJECT_DIR$/03-CSS/CSS 阴影技巧与细节.md" />
+        <option value="$PROJECT_DIR$/11-测试/前端自动化测试.md" />
+        <option value="$PROJECT_DIR$/11-测试/Jest/钩子函数.md" />
+        <option value="$PROJECT_DIR$/11-测试/Jest/Vue中的 BDD 与集成测试.md" />
+        <option value="$PROJECT_DIR$/11-测试/Jest/Vue中的TDD与单元测试.md" />
       </list>
     </option>
   </component>
@@ -136,8 +138,7 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="717" />
-    <option name="y" value="24" />
+    <option name="x" value="582" />
     <option name="width" value="1329" />
     <option name="height" value="1035" />
   </component>
@@ -168,22 +169,22 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/projects/vTradEx/c6" />
+    <property name="last_opened_file_path" value="D:/projects/vTradEx/vue-zjky_wms" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\personal\frontend_notes\10-移动端\项目搭建" />
-      <recent name="D:\personal\frontend_notes\10-移动端\项目搭建\移动端布局" />
-      <recent name="D:\personal\blog\02-浏览器\03-前端性能优化" />
-      <recent name="D:\personal\blog\01-JavaScript\02-JS运行机制" />
-      <recent name="D:\personal\blog" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\personal\blog\images" />
       <recent name="D:\personal\blog\移动端\项目搭建\css" />
       <recent name="D:\personal\blog\PHP\ThinkPHP" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\personal\frontend_notes\11-测试\Jest" />
+      <recent name="D:\personal\frontend_notes\10-移动端\项目搭建" />
+      <recent name="D:\personal\frontend_notes\10-移动端\项目搭建\移动端布局" />
+      <recent name="D:\personal\blog\02-浏览器\03-前端性能优化" />
+      <recent name="D:\personal\blog\01-JavaScript\02-JS运行机制" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -508,6 +509,11 @@
       <workItem from="1577671262891" duration="5703000" />
       <workItem from="1578969274252" duration="3983000" />
       <workItem from="1579153895431" duration="2108000" />
+      <workItem from="1580446564080" duration="6480000" />
+      <workItem from="1580530404741" duration="4264000" />
+      <workItem from="1580795255243" duration="1202000" />
+      <workItem from="1580961777123" duration="21000" />
+      <workItem from="1581488132635" duration="1248000" />
     </task>
     <task id="LOCAL-00001" summary="Egg 第一次阅读官方文档">
       <created>1531387032856</created>
@@ -800,7 +806,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="545427000" />
+    <option name="totallyTimeSpent" value="558642000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
@@ -809,7 +815,6 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3293718" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.43803057" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.35017422" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3205575" />
@@ -822,6 +827,7 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.43803057" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -859,52 +865,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="资料整理" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/03-CSS/CSS预处理/SCSS/SCSS in ElementUI.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="244">
-            <caret line="13" column="18" lean-forward="true" selection-start-line="13" selection-start-column="18" selection-end-line="13" selection-end-column="18" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/03-CSS/CSS预处理/SCSS/SCSS.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="382">
-            <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-JavaScript/DOM/requestAnimationFrame.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-JavaScript/DOM/全屏模式.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-JavaScript/DOM/DOM常用api.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="69">
-            <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/05-Vue.js/ElementUI源码解析.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -1334,6 +1294,56 @@
         <state split_layout="FIRST">
           <first_editor relative-caret-position="322">
             <caret line="14" column="45" lean-forward="true" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/前端 UI 库/5.Web 前端常用插件.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="168">
+            <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/11-测试/Jest/测试异步代码.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="138">
+            <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/11-测试/Jest/钩子函数.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="207">
+            <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/11-测试/Jest/Vue中的 BDD 与集成测试.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="92">
+            <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/11-测试/Jest/Vue中的TDD与单元测试.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="276">
+            <caret line="12" column="80" selection-start-line="12" selection-start-column="80" selection-end-line="12" selection-end-column="80" />
           </first_editor>
           <second_editor />
         </state>
