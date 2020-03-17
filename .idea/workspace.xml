@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7a028bf-1ae3-427d-a613-cbe0ce7fc660" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/11-测试/Jest/Vue中的 BDD 与集成测试.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11-测试/Jest/Vue中的TDD与单元测试.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11-测试/Jest/测试异步代码.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/11-测试/Jest/钩子函数.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/03-CSS/CSS预处理/SCSS/utils.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13-TypeScript/tsconfig.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13-TypeScript/实战/1.浏览器全屏/global.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13-TypeScript/实战/1.浏览器全屏/main.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/13-TypeScript/实战/目录.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/插件汇总.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeScript/0.引言.md" beforeDir="false" afterPath="$PROJECT_DIR$/13-TypeScript/0.引言.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeScript/1.类型断言.md" beforeDir="false" afterPath="$PROJECT_DIR$/13-TypeScript/1.基础类型和高级类型.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeScript/2.声明文件.md" beforeDir="false" afterPath="$PROJECT_DIR$/13-TypeScript/2.声明文件.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TypeScript/3.第三方模块导入.md" beforeDir="false" afterPath="$PROJECT_DIR$/13-TypeScript/3.第三方模块导入.md" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -19,12 +25,23 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="插件汇总.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/插件汇总.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="474">
+                <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>strictNullChecks</find>
-      <find>可选参数</find>
       <find>动画</find>
       <find>assets</find>
       <find>Vue.extend</find>
@@ -53,6 +70,8 @@
       <find>类型</find>
       <find>box-shadow</find>
       <find>测试</find>
+      <find>像素</find>
+      <find>utils</find>
     </findStrings>
     <replaceStrings>
       <replace>babel-polyfill</replace>
@@ -74,13 +93,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/06-前端工程化/webpack/Webpack实战.md" />
-        <option value="$PROJECT_DIR$/06-前端工程化/webpack/plugins/MiniCssExtractPlugin.md" />
-        <option value="$PROJECT_DIR$/06-前端工程化/webpack/Webpack常用插件.md" />
-        <option value="$PROJECT_DIR$/06-前端工程化/webpack/webpack 入门.md" />
-        <option value="$PROJECT_DIR$/06-前端工程化/webpack/plugins/Webpack常用插件.md" />
-        <option value="$PROJECT_DIR$/06-前端工程化/webpack/webpack 核心概念.md" />
-        <option value="$PROJECT_DIR$/06-前端工程化/webpack/loaders/Webpack常用Loader.md" />
         <option value="$PROJECT_DIR$/07-算法/0.算法入门.md" />
         <option value="$PROJECT_DIR$/05-Vue.js/1.组件通信.md" />
         <option value="$PROJECT_DIR$/05-Vue.js/0.目录.md" />
@@ -125,6 +137,13 @@
         <option value="$PROJECT_DIR$/11-测试/Jest/钩子函数.md" />
         <option value="$PROJECT_DIR$/11-测试/Jest/Vue中的 BDD 与集成测试.md" />
         <option value="$PROJECT_DIR$/11-测试/Jest/Vue中的TDD与单元测试.md" />
+        <option value="$PROJECT_DIR$/13-TypeScript/实战/目录.md" />
+        <option value="$PROJECT_DIR$/13-TypeScript/实战/1.浏览器全屏/global.d.ts" />
+        <option value="$PROJECT_DIR$/13-TypeScript/实战/1.浏览器全屏/main.ts" />
+        <option value="$PROJECT_DIR$/13-TypeScript/tsconfig.json" />
+        <option value="$PROJECT_DIR$/13-TypeScript/0.引言.md" />
+        <option value="$PROJECT_DIR$/13-TypeScript/1.基础类型和高级类型.md" />
+        <option value="$PROJECT_DIR$/插件汇总.md" />
       </list>
     </option>
   </component>
@@ -147,7 +166,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -159,6 +177,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -169,22 +188,22 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/projects/vTradEx/vue-zjky_wms" />
+    <property name="last_opened_file_path" value="D:/projects/vTradEx/vue-sanywms" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\personal\blog\images" />
-      <recent name="D:\personal\blog\移动端\项目搭建\css" />
-      <recent name="D:\personal\blog\PHP\ThinkPHP" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\personal\frontend_notes\11-测试\Jest" />
       <recent name="D:\personal\frontend_notes\10-移动端\项目搭建" />
       <recent name="D:\personal\frontend_notes\10-移动端\项目搭建\移动端布局" />
       <recent name="D:\personal\blog\02-浏览器\03-前端性能优化" />
       <recent name="D:\personal\blog\01-JavaScript\02-JS运行机制" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\personal\blog\images" />
+      <recent name="D:\personal\blog\移动端\项目搭建\css" />
+      <recent name="D:\personal\blog\PHP\ThinkPHP" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -514,6 +533,8 @@
       <workItem from="1580795255243" duration="1202000" />
       <workItem from="1580961777123" duration="21000" />
       <workItem from="1581488132635" duration="1248000" />
+      <workItem from="1584341983386" duration="6422000" />
+      <workItem from="1584408656463" duration="4131000" />
     </task>
     <task id="LOCAL-00001" summary="Egg 第一次阅读官方文档">
       <created>1531387032856</created>
@@ -806,15 +827,17 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="558642000" />
+    <option name="totallyTimeSpent" value="569195000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22557585" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17235902" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3293718" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.43803057" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.35017422" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3205575" />
@@ -823,11 +846,11 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TypeScript" order="7" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.43803057" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -865,132 +888,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="资料整理" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/05-Vue.js/ElementUI源码解析.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="138">
-            <caret line="6" column="15" lean-forward="true" selection-start-line="6" selection-start-column="15" selection-end-line="6" selection-end-column="15" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/03-CSS/负边距的应用.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="230">
-            <caret line="10" column="6" selection-start-line="10" selection-start-column="6" selection-end-line="10" selection-end-column="6" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/未分类/UI资源整理.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="115">
-            <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/03-CSS/常见需求/绝对底部.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="-599">
-            <caret line="4" selection-start-line="4" selection-end-line="4" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/03-CSS/常见需求/文字两端对齐.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="782">
-            <caret line="33" column="15" lean-forward="true" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="15" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-JavaScript/JS浮点数陷阱及解法.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-JavaScript/语法/数据类型/1.数字类型.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="1288">
-            <caret line="55" column="3" lean-forward="true" selection-start-line="55" selection-start-column="3" selection-end-line="55" selection-end-column="3" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-JavaScript/语法/数据类型/0.目录.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="-1220">
-            <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/01-JavaScript/常见需求/全屏API.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="69">
-            <caret line="3" selection-start-line="3" selection-end-line="35" selection-end-column="1" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/未分类/版本管理之Git.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="69">
-            <caret line="3" column="15" selection-start-line="3" selection-start-column="15" selection-end-line="3" selection-end-column="15" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/06-前端工程化/webpack/webpack 性能优化.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor>
-            <caret column="11" selection-start-column="11" selection-end-column="11" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02-浏览器/03-前端性能优化/06-构建优化.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02-浏览器/03-前端性能优化/02-HTTP缓存.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="644">
-            <caret line="24" column="17" lean-forward="true" selection-start-line="24" selection-start-column="17" selection-end-line="24" selection-end-column="17" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/02-浏览器/03-前端性能优化/07-本地存储.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -1344,6 +1241,110 @@
         <state split_layout="FIRST">
           <first_editor relative-caret-position="276">
             <caret line="12" column="80" selection-start-line="12" selection-start-column="80" selection-end-line="12" selection-end-column="80" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/13-TypeScript/实战/目录.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="46">
+            <caret line="2" column="60" selection-start-line="2" selection-start-column="60" selection-end-line="2" selection-end-column="60" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/13-TypeScript/实战/1.浏览器全屏/global.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/13-TypeScript/实战/1.浏览器全屏/main.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1867">
+          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/13-TypeScript/3.第三方模块导入.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/13-TypeScript/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-183">
+          <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/13-TypeScript/1.基础类型和高级类型.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="1748">
+            <caret line="76" lean-forward="true" selection-start-line="76" selection-end-line="76" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/13-TypeScript/2.声明文件.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/13-TypeScript/0.引言.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="-783">
+            <caret line="13" column="8" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03-CSS/CSS预处理/SCSS/SCSS in ElementUI.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="-162" />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03-CSS/CSS预处理/SCSS/SCSS.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03-CSS/CSS预处理/SCSS/utils.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/工具篇.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/插件汇总.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="474">
+            <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
           </first_editor>
           <second_editor />
         </state>
