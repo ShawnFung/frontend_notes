@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>手机扫描条形码</title>
+  <script src="https://serratus.github.io/quaggaJS/examples/js/quagga.min.js"></script>
+</head>
+<body>
+  <input type="file" accept="image/*" capture="camera" onchange="fileChange(event)">  <!--直接打开摄像头拍照-->
+  <script type="text/javascript">
+    function fileChange (event) {
+      let files = event.target.files || event.dataTransfer.files;
+      let file = files[0];
+      let reader = new FileReader();
+      // 将文件以Data URL形式进行读入页面
+      reader.readAsDataURL(file);
+      reader.onload = (e) => {
+        // 使用Quagga.js读取条形码
+        decodeSingle(e.target.result) // 转换后的文件数据存储在e.target.result中
+      }
+    }
+    function decodeSingle (src) {
+      Quagga.decodeSingle({
+        decoder: {
+          readers: ["code_128_reader"] // List of active readers
+        },
+        locate: true, // try to locate the barcode in the image
+        src: src
+      }, function(result){
+        if(result) {
+          console.log("result", result.codeResult.code);
+        } else {
+          console.log("not detected");
+        }
+      });
+    }
+  </script>
+</body>
+</html>
