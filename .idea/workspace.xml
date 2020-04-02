@@ -2,17 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7a028bf-1ae3-427d-a613-cbe0ce7fc660" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/03-CSS/CSS预处理/SCSS/utils.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-TypeScript/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-TypeScript/实战/1.浏览器全屏/global.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-TypeScript/实战/1.浏览器全屏/main.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/13-TypeScript/实战/目录.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/插件汇总.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/05-Vue.js/vue-router/vue-router总结.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/11-测试/Fiddler.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TypeScript/0.引言.md" beforeDir="false" afterPath="$PROJECT_DIR$/13-TypeScript/0.引言.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TypeScript/1.类型断言.md" beforeDir="false" afterPath="$PROJECT_DIR$/13-TypeScript/1.基础类型和高级类型.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TypeScript/2.声明文件.md" beforeDir="false" afterPath="$PROJECT_DIR$/13-TypeScript/2.声明文件.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TypeScript/3.第三方模块导入.md" beforeDir="false" afterPath="$PROJECT_DIR$/13-TypeScript/3.第三方模块导入.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06-前端工程化/webpack/require 动态加载.md" beforeDir="false" afterPath="$PROJECT_DIR$/06-前端工程化/webpack/require 动态加载.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/13-TypeScript/实战/1.浏览器全屏/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/13-TypeScript/实战/1.浏览器全屏/fullscreen.ts" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,30 +19,13 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="插件汇总.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/插件汇总.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="474">
-                <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
-              </first_editor>
-              <second_editor />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>动画</find>
-      <find>assets</find>
-      <find>Vue.extend</find>
       <find>Element</find>
       <find>负边距</find>
       <find>UI</find>
-      <find>全屏</find>
       <find>git</find>
       <find>性能优化</find>
       <find>优化</find>
@@ -72,6 +49,10 @@
       <find>测试</find>
       <find>像素</find>
       <find>utils</find>
+      <find>vue-router</find>
+      <find>fiddler</find>
+      <find>全屏</find>
+      <find>require</find>
     </findStrings>
     <replaceStrings>
       <replace>babel-polyfill</replace>
@@ -93,10 +74,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/07-算法/0.算法入门.md" />
-        <option value="$PROJECT_DIR$/05-Vue.js/1.组件通信.md" />
-        <option value="$PROJECT_DIR$/05-Vue.js/0.目录.md" />
-        <option value="$PROJECT_DIR$/05-Vue.js/Vue实践与技巧.md" />
         <option value="$PROJECT_DIR$/08-Node.js/常用 npm 命令.md" />
         <option value="$PROJECT_DIR$/TypeScript/0.引言.md" />
         <option value="$PROJECT_DIR$/09-动画/CSS动画/纯CSS动画.md" />
@@ -144,6 +121,10 @@
         <option value="$PROJECT_DIR$/13-TypeScript/0.引言.md" />
         <option value="$PROJECT_DIR$/13-TypeScript/1.基础类型和高级类型.md" />
         <option value="$PROJECT_DIR$/插件汇总.md" />
+        <option value="$PROJECT_DIR$/05-Vue.js/vue-router/vue-router总结.md" />
+        <option value="$PROJECT_DIR$/11-测试/Fiddler.md" />
+        <option value="$PROJECT_DIR$/13-TypeScript/实战/1.浏览器全屏/fullscreen.ts" />
+        <option value="$PROJECT_DIR$/06-前端工程化/webpack/require 动态加载.md" />
       </list>
     </option>
   </component>
@@ -188,9 +169,10 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/projects/vTradEx/vue-sanywms" />
+    <property name="last_opened_file_path" value="D:/projects/thorn6-vue-start" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2018.1.5\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -534,7 +516,12 @@
       <workItem from="1580961777123" duration="21000" />
       <workItem from="1581488132635" duration="1248000" />
       <workItem from="1584341983386" duration="6422000" />
-      <workItem from="1584408656463" duration="4131000" />
+      <workItem from="1584408656463" duration="7377000" />
+      <workItem from="1584492179161" duration="598000" />
+      <workItem from="1584607642963" duration="1612000" />
+      <workItem from="1585030093259" duration="1221000" />
+      <workItem from="1585201176609" duration="706000" />
+      <workItem from="1585556393865" duration="1096000" />
     </task>
     <task id="LOCAL-00001" summary="Egg 第一次阅读官方文档">
       <created>1531387032856</created>
@@ -827,13 +814,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="569195000" />
+    <option name="totallyTimeSpent" value="577674000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17235902" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22081016" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.3293718" />
@@ -888,32 +874,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="资料整理" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/02-浏览器/03-前端性能优化/07-本地存储.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="123">
-            <caret line="12" column="20" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02-浏览器/03-前端性能优化/03-资源压缩与合并.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/02-浏览器/03-前端性能优化/04-图片懒加载.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="-552" />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/01-JavaScript/02-JS运行机制/2-2.Promise和setTimeout执行顺序.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
@@ -1263,13 +1223,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/13-TypeScript/实战/1.浏览器全屏/main.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1867">
-          <caret line="6" column="17" lean-forward="true" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/13-TypeScript/3.第三方模块导入.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -1340,11 +1293,48 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/05-Vue.js/vue-router/vue-router总结.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="184">
+            <caret line="7" column="91" selection-start-line="7" selection-start-column="91" selection-end-line="7" selection-end-column="91" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/11-测试/Fiddler.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="161">
+            <caret line="7" selection-start-line="7" selection-end-line="7" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/13-TypeScript/实战/1.浏览器全屏/fullscreen.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/插件汇总.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="474">
-            <caret line="43" column="11" selection-start-line="43" selection-start-column="11" selection-end-line="43" selection-end-column="11" />
+          <first_editor relative-caret-position="291">
+            <caret line="40" column="9" selection-start-line="40" selection-start-column="9" selection-end-line="40" selection-end-column="9" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06-前端工程化/webpack/require 动态加载.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="713">
+            <caret line="31" column="21" lean-forward="true" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
           </first_editor>
           <second_editor />
         </state>

@@ -4,6 +4,7 @@ type FSEPropName = 'webkitFullscreenElement' | 'msFullscreenElement' | 'mozFullS
 type ONFSCPropName = 'onfullscreenchange' | 'onwebkitfullscreenchange' | 'onmozfullscreenchange' | 'MSFullscreenChange';
 
 /**
+ * 浏览器全屏
  * 原作者的 github 地址
  * https://github.com/any86/be-full
  * caniuse
