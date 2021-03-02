@@ -1,5 +1,11 @@
 # 常用 npm 命令
 
+## npm install 安装依赖
+1. 如果安装过程出现sass相关的安装错误，请在安装mirror-config-china后重试。
+```
+$ npm install -g mirror-config-china
+```
+
 ## npx
 npm 从5.2版开始，增加了 npx 命令。
 
