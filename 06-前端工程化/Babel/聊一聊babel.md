@@ -4,7 +4,7 @@ Babel 是一个工具链，主要用于将 ECMAScript 2015+ 版本的代码转�
 - [Javascript 可视化分词](https://resources.jointjs.com/demos/javascript-ast)
 
 ## Babel 工作流程
-- Parse解析: 将代码(其实就是字符串)转换成 AST( 抽象语法树)
+- Parse解析: 将代码(其实就是字符串)转换成 AST(抽象语法树)
   - 词法分析Tokenizer: 将代码(字符串)分割为token流,即语法单元成的数组
   - 语法分析: 分析token流(上面生成的数组)并生成 AST
 - Transform转换: 访问 AST 的节点进行变换操作生成新的 AST
