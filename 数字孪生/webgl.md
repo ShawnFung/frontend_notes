@@ -62,7 +62,7 @@ const newY = (canvas.height / 2 - domY) / (canvas.height / 2);
 - 创建缓冲区对象 
 - 绑定缓冲区对象
 - 将数据写入缓冲区对象
-- 给 attribute 赋值 gl.vertexAttribPointer
+- 使用缓存区数据给 attribute 赋值 gl.vertexAttribPointer
 - 开启 attribute 变量 gl.enableVertexAttribArray
 ```
 var vertices = new Float32Array([
@@ -90,7 +90,6 @@ void gl.vertexAttribPointer(index, size, type, normalized, stride, offset);
 - normalized，对于参数 gl.FLOAT 无效
 - stride，每次拿数据时的间隔。首先拿到 const FSIZE = verties.BYTES_PER_ELEMENT, 也就是数组的字节长度，必须是字节长的倍数。
 - offset，偏移量，必须是字节长的倍数。
-
 
 ## 类型化数组
 数组中所有元素的值都被指定为某一特定类型。  
@@ -207,11 +206,92 @@ img.onload = function() {
 img.src = '../assets/content.png'
 ```
 
+## 光照
+光源类型
+- 点光源光：一个点向周围发出的光，如灯泡、火焰等。定义一个点光源光需要【光源的位置】、【光线方向】以及【颜色】。其中光线的方向根据光源位置和被照射位置计算出来。
+- 平行光：平行光可以看成是无限远处的光源发出的光，如太阳光。因为离光源的位置特别远，所以到达被照物体时可以认为光线是平行的。只需要用一个【方向】和【颜色】来定义即可。
+- 环境光：被其他物体反射后的光，从各方向照射物体，其颜色一致，只需要一个【颜色】来定义。
+
+反射类型
+表面的反射光颜色 = 漫反射光颜色 + 环境反射光颜色
+- 漫反射：漫反射光颜色 = 入射光颜色 × 表面基底色 × (光线方向 × 法线方向)
+- 环境反射：环境反射光颜色 = 入射光颜色 × 表面基底色  
+
+```
+const VERTEX_SHADER_SOURCE = `
+  attribute vec4 aPosition;
+  attribute vec4 aNormal;
+  varying vec4 vColor;
+
+  uniform mat4 mat;
+  void main() {
+    // 定义点光源的颜色
+    vec3 uPointLightColor = vec3(1.0,1.0,0.0);
+
+    // 点光源的位置
+    vec3 uPointLightPosition = vec3(-5.0,6.0,10.0);
+
+    // 环境光
+    vec3 uAmbientLightColor = vec3(0.2,0.2,0.2);
+
+    // 物体表面的颜色
+    vec4 aColor = vec4(1.0,0.0,0.0,1.0);
+
+    // 顶点的世界坐标
+    vec4 vertexPosition = mat * aPosition;
+
+    // 点光源的方向
+    vec3 lightDirection = normalize(uPointLightPosition - vec3(vertexPosition));
+
+    // 环境反射
+    vec3 ambient = uAmbientLightColor * vec3(aColor);
+
+    // 计算入射角 光线方向和法线方向的点积
+    float dotDeg = dot(lightDirection, vec3(aNormal));
+
+    // 漫反射光的颜色
+    vec3 diffuseColor = uPointLightColor * vec3(aColor) * dotDeg;
+
+    gl_Position = vertexPosition;
+    vColor = vec4(ambient + diffuseColor, aColor.a);
+  }
+`; // 顶点着色器
+```
+
+## 雾化
+```
+const FRAGMENT_SHADER_SOURCE = `
+  precision lowp float;
+  varying vec4 vColor;
+  varying float vDist;
+
+  // 雾化颜色
+  uniform vec3 uFogColor;
+  // 起点到终点的距离 第一个参数是起点   第二个是终点
+  uniform vec2 uFogDist;
+
+  void main() {
+    // 计算雾化因子：(终点 - 当前点与视点的距离) / (终点 - 起点)
+    float fogFactor = (uFogDist.y - vDist) / (uFogDist.y - uFogDist.x);
+
+    // 看到的颜色是什么 物体颜色*雾化因子+雾化颜色*（1-雾化因子）
+    // mix 线性混合计算  mix(x,y,a) => { x * (1-a) + y * a }
+    vec3 color = mix(uFogColor, vec3(vColor), fogFactor);
+    gl_FragColor = vec4(color, vColor.a);
+  }
+`; // 片元着色器
+```
+
+## Questions
+- 可以存在多个缓冲区，那么是否可以设置多个索引缓冲区？如果可以，怎么操作？
+
 ## 参考文档
 - [官方文档](https://developer.mozilla.org/zh-CN/docs/Web/API/WebGL_API)
+- [WebGL 基础概念](https://webglfundamentals.org/webgl/lessons/zh_cn/webgl-fundamentals.html)
 - [一起学 WebGL：坐标系](https://zhuanlan.zhihu.com/p/615919060?utm_id=0)
 - [02-WebGL缓冲区对象](https://www.jianshu.com/p/a31c1f3f9ba3)
 - [webgl变换：深入图形平移](https://zhuanlan.zhihu.com/p/356123876)
 - [webgl变换：深入图形旋转](https://zhuanlan.zhihu.com/p/361920057)
 - [webgl变换：深入图形缩放](https://zhuanlan.zhihu.com/p/356123876)
 - [webgl纹理贴图机制](https://blog.csdn.net/qq_37987033/article/details/128745577)
+- [WebGL简易教程(十)：光照](https://www.cnblogs.com/charlee44/p/11668014.html)
