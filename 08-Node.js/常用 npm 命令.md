@@ -1,5 +1,8 @@
 # 常用 npm 命令
 
+## npm init
+如果执行的是 npm init xxx，则 npm 会去找 create-xxx 包来执行项目初始化。
+
 ## npm install 安装依赖
 1. 如果安装过程出现sass相关的安装错误，请在安装mirror-config-china后重试。
 ```
