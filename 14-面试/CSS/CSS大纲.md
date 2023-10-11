@@ -57,24 +57,6 @@
 
 <img width="600" src="./images/interview/4.png">
 
-## 4. 居中布局
-
-- 水平居中
-	- 行内元素: `text-align: center`
-	- 块级元素: `margin: 0 auto`
-	- `absolute + transform`
-	- `flex + justify-content: center`
-	
-- 垂直居中
-	- `line-height: height` 
-	- `absolute + transform`
-	- `flex + align-items: center`
-	- `table`
-	
-- 水平垂直居中
-	- `absolute + transform`
-	- `flex + justify-content + align-items`
-
 ## 5. 选择器优先级
 
 - `!important` > 行内样式 > `#id` > `.class` > `tag` > * > 继承 > 默认 
