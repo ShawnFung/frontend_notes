@@ -174,6 +174,7 @@ provide('read-only-count', readonly(count))
 
 #### setup() 钩子是在组件中使用组合式 API 的入口
 - 在 setup() 函数中返回的对象会暴露给模板和组件实例。
+- 在模板中访问从 setup 返回的 ref 时，它会**自动浅层解包**，因此你无须再在模板中为它写 .value。当通过 this 访问时也会同样如此解包。
 - setup() 自身并不含对组件实例的访问权，即在 setup() 中访问 this 会是 undefined。
 - setup() 的两个参数
   - props，是响应式的
